@@ -9,48 +9,67 @@
 <body>
 	<!-- the entire body must be written by student -->
 <form>
-<span>
+
 <div class="mb-3">
 <label for="first-name-input" class="form-label">First Name</label>
 <input type="text" id="first-name-input" class="form-control" required>	
+	<div class="invalid-feedback">
+    Please provide a valid first name.
+  </div>
 </div>
 	
 <div class="mb-3">
 <label for="last-name-input" class="form-label">Last Name</label>
 <input type="text" id="last-name-input" class="form-control" required> 
+	<div class="invalid-feedback">
+    Please provide a valid Last name.
+  </div>
 </div>
 	
 <div class="mb-3">
 <label for="email-input" class="form-label">Email Address </label>
 <input type="email" id="email-input"  class="form-control"required>
+	<div class="invalid-feedback">
+    Please provide a valid Email Address.
+  </div>
 </div>
-</span>
 
-	<span>
+	
 <div class="mb-3">
 <label for="college-input" class="form-label">College</label>
 <input type="text" id="college-input"  class="form-control"required>	
+	<div class="invalid-feedback">
+    Please provide a valid College name.
+  </div>
 </div>
 	
 <div class="mb-3">
 <label for="grad-year-select" class="form-label">Graduation Year</label>
-<select id="grad-year-select" class="form-control" required>
+<select id="grad-year-select" class="form-select" required>
 	<option>2020</option>
 	<option>2021</option>
 	<option>2022</option>
 	<option>2023</option>
-</select>	
+
+</select>
+	<div class="invalid-feedback">
+    Please provide a valid year.
+  </div>
 </div>
 
 <div class="mb-3">
-<label for="roll-no-input">Roll No</label>
-<input type="number" id="roll-no-input"  class="form-control"required>	
+<label for="roll-no-input" class="form-label" >Roll No</label>
+<input type="number" id="roll-no-input"  class="form-control" required>
+	<div class="invalid-feedback">
+    Please provide a valid Roll No.
+  </div>
 </div>
-</span>
+
 	
 <div class="mb-3">
 <input type="checkbox" id="conditions-checkbox"  class="form-control" required>
-<label for="conditions-checkbox">Agree to terms and conditions <br>You must agree before submitting</label>
+<label for="conditions-checkbox" class="form-label">Agree to terms and conditions <br>You must agree before submitting</label>
+
 </div>
 	
 <div class="mb-3">
