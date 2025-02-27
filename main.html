@@ -9,36 +9,54 @@
 <body>
 	<!-- the entire body must be written by student -->
 <form>
-<br>
-<br>	
-<label>First Name</label>
-<input type="text"id="first-name-input">
-<label>Last Name</label>
-<input type="text" id="last-name-input">
+<span>
+<div class="mb-3">
+<label for="first-name-input" class="form-label">First Name</label>
+<input type="text"id="first-name-input" required>	
+</div>
+	
+<div class="mb-3">
+<label for="last-name-input" class="form-label">Last Name</label>
+<input type="text" id="last-name-input" required> 
+</div>
+	
+<div class="mb-3">
+<label for="email-input" class="form-label">Email </label>
+<input type="text" id="email-input" required>
+</div>
+</span>
 
-<label>Email </label>
-	<input type="text" id="email-input">
-<br><br>
-<label>College</label>
-<input type="text" id="college-input">
-<label>Graduation Year</label>
-<select>
+	<span>
+<div class="mb-3">
+<label for="college-input" class="form-label">College</label>
+<input type="text" id="college-input" required>	
+</div>
+	
+<div class="mb-3">
+<label for="graduation-year-input" class="form-label">Graduation Year</label>
+<select id="graduation-year-input" required>
 	<option>2020</option>
 	<option>2021</option>
 	<option>2022</option>
 	<option>2023</option>
-</select>
-<label>Roll No</label>
-<input type="number" id="roll-no-input">
-<br><br>
+</select>	
+</div>
 
-<input type="checkbox" id="conditions-checkbox">
-<label>Agree to terms and conditions <br>You must agree before submitting</label>
-<br><br>
-<button type ="submit" >Submit form</button>
+<div class="mb-3">
+<label for="roll-no-input">Roll No</label>
+<input type="number" id="roll-no-input" required>	
+</div>
+</span>
 	
-<br>
-<br>
+<div class="mb-3">
+<input type="checkbox" id="conditions-checkbox" required>
+<label for="conditions-checkbox">Agree to terms and conditions <br>You must agree before submitting</label>
+</div>
+	
+<div class="mb-3">
+<button type ="submit" >Submit form</button>	
+</div>
+
 
 </form>
 
